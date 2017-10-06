@@ -4,7 +4,7 @@
     "parameters": {
       "runCommand": {
         "type": "StringList",
-        "default" : ["echo Hello from GitHub!"]
+        "default" : ["echo Hello GitHub!"]
       }
     },
     "runtimeConfig": {
