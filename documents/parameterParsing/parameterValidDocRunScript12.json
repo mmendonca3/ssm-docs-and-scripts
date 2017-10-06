@@ -3,8 +3,8 @@
     "description": "This document defines an echo command which is to be executed in linux by specifying the commit id.",
     "parameters": {
       "runCommand": {
-        "type": "String",
-        "default" : "echo Hello from GitHub!"
+        "type": "StringList",
+        "default" : ["echo Hello from GitHub!"]
       }
     },
     "runtimeConfig": {
