@@ -5,6 +5,14 @@
       "runCommand": {
         "type": "StringList",
         "default" : ["echo Hello GitHub!"]
+      },
+      "timeoutSeconds":{
+          "type": "String",
+          "default": "3600"
+      },
+      "workingDirectory":{
+          "type":"String",
+          "default": ""
       }
     },
     "runtimeConfig": {
