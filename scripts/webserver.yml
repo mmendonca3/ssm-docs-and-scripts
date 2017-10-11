@@ -1,0 +1,19 @@
+- hosts: all
+    become: true
+
+    tasks:
+    - name: install apache on redhat or centos instances
+      yum: name=httpd state=present
+      when: ansible_os_family == "RedHat"
+
+    - name: install apache on debian or ubuntu instances
+      apt: name=apache2 state=present
+      when: ansible_os_family == "Debian"
+
+    - name: enable apache on startup and start service for redhat or centos
+      service: name=httpd enabled=yes state=started
+      when: ansible_os_family == "RedHat"
+
+    - name: enable apache on startup and start service for debian or ubuntu
+      service: name=apache2 enabled=yes state=started
+      when: ansible_os_family == "Debian"
