@@ -1,7 +1,6 @@
-- hosts: all
-    become: true
+- hosts: all 
 
-    tasks:
+  tasks:
     - name: install apache on redhat or centos instances
       yum: name=httpd state=present
       when: ansible_os_family == "RedHat"
