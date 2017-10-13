@@ -4,7 +4,7 @@
     "parameters": {
       "runCommand": {
         "type": "StringList",
-        "default" : ["echo \"Hello GitHub!\""]
+        "default" : ["echo \"Hello Windows GitHub!\""]
       },
       "timeoutSeconds":{
           "type": "String",
