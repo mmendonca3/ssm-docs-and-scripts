@@ -1,0 +1,30 @@
+{
+    "schemaVersion": "1.2",
+    "description": "This document defines an echo command which is to be executed in linux by specifying the commit id.",
+    "parameters": {
+      "runCommand": {
+        "type": "StringList",
+        "default" : ["echo Hello GitHub!"]
+      },
+      "timeoutSeconds":{
+          "type": "String",
+          "default": "3600"
+      },
+      "workingDirectory":{
+          "type":"String",
+          "default": ""
+      }
+    },
+    "runtimeConfig": {
+      "aws:runPowerShellScript": {
+        "properties": [
+          {
+            "id": "0.aws:runPowerShellScript",
+            "runCommand": "{{ runCommand }}",
+            "timeoutSeconds": "{{ timeoutSeconds }}",
+            "workingDirectory": "{{ workingDirectory }}"
+          }
+        ]
+      }
+    }
+}
