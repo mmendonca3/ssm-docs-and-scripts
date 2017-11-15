@@ -1,0 +1,19 @@
+{
+   "schemaVersion":"2.0",
+   "description":"State Manager Bootstrap Example",
+    "parameters": {
+    },
+   "mainSteps": [
+     {
+       "action": "aws:runShellScript",
+       "name": "configureServer",
+       "inputs": {
+          "runCommand": [
+              "sudo yum install -y httpd24",
+              "sudo yum install -y mysql-server",
+              "sudo service mysqld start"
+          ]
+       }
+     }
+   ]
+}
