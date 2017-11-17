@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "2.2",
+  "description": "Compose SSM documents",
+  "parameters": {},
+  "mainSteps": [
+    {
+      "action": "aws:runDocument",
+      "name": "AgentUpdate",
+      "inputs": {
+        "documentType": "SSMDocument",
+        "documentPath": "AWS-UpdateSSMAgent"
+      }
+    },
+    {
+      "action": "aws:runDocument",
+      "name": "ApplyPatchBaseline",
+      "inputs": {
+        "documentType": "SSMDocument",
+        "documentPath": "AWS-RunPatchBaseline",
+        "documentParameters": "{\"Operation\":\"Install\"}"
+      }
+    },
+    {
+      "action":"aws:runDocument",
+      "name" : "ConfigureAWSPVDriver",
+      "inputs":{
+        "documentType":"SSMDocument",
+        "documentPath":"AWS-ConfigureAWSPackage",
+        "documentParameters": "{\"action\":\"Install\", \"name\":\"AWSPVDriver\"}"
+      }
+    },
+    {
+      "action":"aws:runDocument",
+      "name": "DownloadHelthCheckScript",
+      "inputs":{
+        "documentType": "SSMDocument",
+        "documentPath": "AWS-RunRemoteScript",
+        "documentParameters": "{\"sourceType\":\"GitHub\", \"sourceInfo\":\"{\\\"owner\\\":\\\"mmendonca3\\\",\\\"repository\\\":\\\"dummy-test-public\\\", \\\"path\\\":\\\"scripts/powershell/healthCheckSanity.ps1\\\"}\", \"commandLine\":\"healthCheckSanity.ps1\"}"
+      }
+    }
+  ]
+}
