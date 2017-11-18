@@ -5,14 +5,6 @@
   "mainSteps": [
     {
       "action": "aws:runDocument",
-      "name": "AgentUpdate",
-      "inputs": {
-        "documentType": "SSMDocument",
-        "documentPath": "AWS-UpdateSSMAgent"
-      }
-    },
-    {
-      "action": "aws:runDocument",
       "name": "ApplyPatchBaseline",
       "inputs": {
         "documentType": "SSMDocument",
