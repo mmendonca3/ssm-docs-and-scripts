@@ -20,5 +20,5 @@ mainSteps:
   inputs:
     documentType: SSMDocument
     documentPath: AWS-RunRemoteScript
-    documentParameters: '{"sourceType":"GitHub", "sourceInfo":"{\"owner\":\"mmendonca3\",\"repository\":\"dummy-test-public\",
+    documentParameters: '{"sourceType":"GitHub", "sourceInfo":"{\"owner\":\"mmendonca3\",\"repository\":\"ssm-docs-and-scripts\",
       \"path\":\"scripts/powershell/healthCheckSanity.ps1\"}", "commandLine":"healthCheckSanity.ps1"}'
