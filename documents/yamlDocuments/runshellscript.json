@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2.0",
+  "description": "Example",
+  "parameters": {
+    "Message": {
+      "type": "String",
+      "description": "Example",
+      "default": "Hello World"
+    }
+  },
+  "mainSteps": [
+    {
+      "action": "aws:runShellScript",
+      "name": "example",
+      "inputs": {
+        "runCommand": null
+      }
+    },
+    "echo {{Message}}"
+  ]
+}
