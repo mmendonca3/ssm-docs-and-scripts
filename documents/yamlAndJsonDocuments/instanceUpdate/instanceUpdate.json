@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2",
-  "description": "Compose SSM documents",
+  "description": "Compose SSM documents calling SSM public documents",
   "parameters": {},
   "mainSteps": [
     {
