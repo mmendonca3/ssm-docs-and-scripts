@@ -4,14 +4,14 @@
   "parameters": {
     "Message": {
       "type": "String",
-      "description": "Example",
+      "description": "Example in json doc",
       "default": "Hello World"
     }
   },
   "mainSteps": [
     {
       "action": "aws:runPowerShellScript",
-      "name": "example",
+      "name": "example1",
       "inputs": {
         "runCommand": [
           "Write-Output {{Message}}"
