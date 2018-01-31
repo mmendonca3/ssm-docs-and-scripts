@@ -8,7 +8,7 @@ parameters:
     default: Hello World
 mainSteps:
 - action: aws:runPowerShellScript
-  name: example
+  name: example1
   inputs:
     runCommand:
     - Write-Output {{Message}}
