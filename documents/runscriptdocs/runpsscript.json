@@ -1,10 +1,10 @@
 {
   "schemaVersion": "2.0",
-  "description": "Example",
+  "description": "Example in json doc",
   "parameters": {
     "Message": {
       "type": "String",
-      "description": "Example in json doc",
+      "description": "Parameter to say hello",
       "default": "Hello World"
     }
   },
