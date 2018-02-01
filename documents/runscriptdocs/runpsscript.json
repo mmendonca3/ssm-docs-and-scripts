@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "description": "Example in json doc",
+  "description": "Example in json document",
   "parameters": {
     "Message": {
       "type": "String",
