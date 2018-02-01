@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "description": "Example in json document",
+  "description": "Powershell script document in JSON",
   "parameters": {
     "Messages": {
       "type": "String",
