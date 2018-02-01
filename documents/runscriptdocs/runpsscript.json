@@ -2,7 +2,7 @@
   "schemaVersion": "2.0",
   "description": "Example in json document",
   "parameters": {
-    "Message": {
+    "Messages": {
       "type": "String",
       "description": "Parameter to say hello world",
       "default": "Hello Json World!!"
@@ -14,7 +14,7 @@
       "name": "example1",
       "inputs": {
         "runCommand": [
-          "Write-Output {{Message}}"
+          "Write-Output {{Messages}}"
         ]
       }
     }
