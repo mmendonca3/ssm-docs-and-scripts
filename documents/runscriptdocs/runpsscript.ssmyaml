@@ -1,6 +1,6 @@
 ---
 schemaVersion: '2.0'
-description: Example
+description: Examples
 parameters:
   Message:
     type: String
