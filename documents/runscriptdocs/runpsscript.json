@@ -5,7 +5,7 @@
     "Messages": {
       "type": "String",
       "description": "Parameter to say hello world",
-      "default": "Hello Json World!!"
+      "default": "Hello JSON World!!"
     }
   },
   "mainSteps": [
