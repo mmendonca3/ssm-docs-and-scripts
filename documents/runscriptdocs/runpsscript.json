@@ -14,7 +14,7 @@
       "name": "example1",
       "inputs": {
         "runCommand": [
-          "Write-Output {{Messages}}"
+          "Write-Output {{ Messages }}"
         ]
       }
     }
